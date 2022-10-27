@@ -3,6 +3,7 @@ import './Navbar.css'
 import {motion} from "framer-motion"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from "react-router-dom"
 
 function Navbar() {
 
@@ -17,16 +18,16 @@ function Navbar() {
         <div className="navbar-container">
             <div className="title">
                 <h3 className="title-text">
-                    RMDEC
+                    <Link to="/">RMDEC</Link>
                 </h3>
             </div>
             <div className="navelements-container">
                 <ul className="list-items">
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Events</a></li>
-                    <li><a href='#'>Contact</a></li>
-                    <li><a href='#'>Register</a></li>   
+                    <li><a href='#hme'>Home</a></li>
+                    <li><a href='#abt'>About</a></li>
+                    <li><a href='#evt'>Events</a></li>
+                    <li><a href='#cnt'>Contact</a></li>
+                    <li><a href='#cnt'>Register</a></li>   
                 </ul>
             </div>
         </div>
@@ -39,19 +40,19 @@ function Navbar() {
                 <motion.div className='inner-nav'>
                     <ul className='ul-element'>
                         <motion.li className='li-element' whileHover={{backgroundColor: '#005671'}}>
-                            <a className="anc-element" href="#" onClick={() => setShow(show => !show)}>Home</a>
+                            <a className="anc-element" href="#hme" onClick={() => setShow(show => !show)}>Home</a>
                         </motion.li>
                         <motion.li className='li-element' whileHover={{backgroundColor: '#005671'}}>
-                            <a className="anc-element" href="#" onClick={() => setShow(show => !show)}>About</a>
+                            <a className="anc-element" href="#abt" onClick={() => setShow(show => !show)}>About</a>
                         </motion.li>
                         <motion.li className='li-element' whileHover={{backgroundColor: '#005671'}}>
-                            <a className="anc-element" href="#" onClick={() => setShow(show => !show)}>Events</a>
+                            <a className="anc-element" href="#evt" onClick={() => setShow(show => !show)}>Events</a>
                         </motion.li>
                         <motion.li className='li-element' whileHover={{backgroundColor: '#005671'}}>
-                            <a className="anc-element" href="#" onClick={() => setShow(show => !show)}>Contact</a>
+                            <a className="anc-element" href="#cnt" onClick={() => setShow(show => !show)}>Contact</a>
                         </motion.li>
                         <motion.li className='li-element' whileHover={{backgroundColor: '#005671'}}>
-                            <a className="anc-element" href="#" onClick={() => setShow(show => !show)}>Register</a>
+                            <a className="anc-element" href="#cnt" onClick={() => setShow(show => !show)}>Register</a>
                         </motion.li>
                     </ul>
                 </motion.div>

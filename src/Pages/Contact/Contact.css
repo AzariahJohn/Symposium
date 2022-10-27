@@ -1,0 +1,66 @@
+.contact-container{
+    background: url(../../Images/haikei-contact.svg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    font-family: sans-serif;
+    padding: 30px;
+    scroll-snap-align: start;
+}
+
+.instructions{
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.instruction-title{
+    margin-bottom: 20px;
+}
+
+.ins-content{
+    line-height: 30px
+}
+
+.reg-btn{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reg-btn:hover{
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.register-div{
+    margin-top: -90px;
+}
+
+@media screen and (max-width: 600px){
+    .ins-content{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .instructions{
+        padding: 25px;
+    }
+}
