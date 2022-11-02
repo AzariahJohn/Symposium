@@ -7,9 +7,9 @@ import { Link } from "react-router-dom"
 
 function Navbar() {
 
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     const variants = {
-        open: {opacity: 0, x: 0,},
+        open: {opacity: 1, x: 0,},
         close: {opacity: 0, x: '-100%'}
     }
 
@@ -33,7 +33,7 @@ function Navbar() {
         </div>
         <div className="small-nav">
             <motion.nav 
-                animate={show ? "open" : "closed"}
+                animate={show ? "open" : "close"}
                 variants={variants}
                 transition={{duration: 0.1}}
             >
@@ -63,7 +63,7 @@ function Navbar() {
                 whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
             >
-                {show ? <MenuIcon /> : <CloseIcon />}
+                {show ? <CloseIcon /> : <MenuIcon />}
             </motion.button>
         </div>
     </div>

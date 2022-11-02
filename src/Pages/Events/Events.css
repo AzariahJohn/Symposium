@@ -30,9 +30,9 @@ a{
 }
 
 .card-container{
-    background-color: rgba(165, 237, 255, 0.1);
+    /* background-color: rgba(165, 237, 255, 0.1);
     -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px); */
     margin: 10px;
     height: 300px;
     width: 300px;
@@ -44,6 +44,9 @@ a{
     border-radius: 15px;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+    background: url('../../Images/haikei-contact.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card-container:hover{

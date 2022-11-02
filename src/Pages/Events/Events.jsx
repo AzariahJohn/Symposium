@@ -9,7 +9,7 @@ function Events() {
     <div className="events-outer-container" id="evt">
         <h3 className='events-title'>Events</h3>
         <div className="events-card-container">
-          <Link to="/paper-presentation"><Card name="Paper Presentation"/></Link>
+          <Link to="/paper-presentation"><Card name="Paper Presentation" url="../../Images/haikei-contact.svg"/></Link>
           <Link to="/tech-hunt"><Card name="Tech Hunt"/></Link>
           <Link to="/bid-and-discuss"><Card name="Bid And Discuss"/></Link>
           <Link to="/unwrap-the-story"><Card name="Unwrap The Story"/></Link>
